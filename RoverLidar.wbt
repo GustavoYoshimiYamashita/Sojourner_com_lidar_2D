@@ -1,0 +1,99 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  info [
+    "Pioneer 3DX (Adept Mobile Robots)"
+    "This two-wheel, two-motor differential drive robot has in addition a rear caster wheel"
+    "It is programmed to perform a simple obstacle avoidance behavior based on the values sensed by its 16 sonars"
+  ]
+  title "Pioneer 3-DX with blinking LEDs moving according to a Braitenberg rule"
+  basicTimeStep 8
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  fieldOfView 0.660595
+  orientation 0.0011521001487198952 -0.7143450435729607 -0.6997927060122822 3.1370436179440957
+  position 0.17176575388411341 24.250187693640413 -1.316463391902605
+}
+TexturedBackground {
+}
+RectangleArena {
+  floorSize 12 12
+  floorTileSize 2 2
+  wallHeight 0.4
+}
+Sojourner {
+  hidden position_0_0 1.9504207074013926e-06
+  hidden position_0_1 1.7645966740298323e-05
+  hidden position_0_2 3.766612476968287e-06
+  hidden position_0_3 1.3589524472920514e-05
+  hidden rotation_4 0 0 -1 0.09999599840049173
+  hidden position_4_0 -2.7798179048797985e-06
+  hidden rotation_5 0 0 -1 2.7797755757241146e-06
+  hidden position_5_0 5.282663645215233e-08
+  hidden position_5_1 4.946058989527697
+  hidden rotation_6 0 0.9999999999999999 0 5.16191365590357e-08
+  hidden position_6_0 4.883976352385421
+  hidden rotation_7 0 0 -1 4.883976352385421
+  hidden rotation_8 0 0 -1 4.946058989527697
+  hidden rotation_9 0 0 1 0.0999791110452379
+  hidden position_9_0 -2.3467592614239955e-08
+  hidden rotation_10 0 -0.9999999999999999 0 2.9802322387695313e-08
+  hidden position_10_0 4.508270036488514
+  hidden rotation_11 0 0 -1 4.508270036488514
+  hidden rotation_12 0 0 -0.9999999999999999 0.09999258255400895
+  hidden position_12_0 -1.7334449649423087e-06
+  hidden rotation_13 0 0 -0.9999999999999999 1.7334092401523974e-06
+  hidden position_13_0 -1.263661682404148e-07
+  hidden position_13_1 22.3496720193719
+  hidden rotation_14 0 -1 0 1.264405455326821e-07
+  hidden position_14_0 22.365370333811644
+  hidden rotation_15 0 0 1 2.767370894906702
+  hidden rotation_16 0 0 1 2.7830692093464444
+  hidden rotation_17 0 0 1 0.09998451508291424
+  hidden position_17_0 -1.2581270152304135e-07
+  hidden rotation_18 0 -1 0 1.264405455326821e-07
+  hidden position_18_0 21.549853737855123
+  hidden rotation_19 0 0 1 3.5828874908632224
+  translation -5.4534584160563035 0.23425143768243284 -5.378600423199217
+  rotation 0.000916624476251964 -0.9999994961115596 -0.000409360716847087 1.5628858098227494
+  controller "<extern>"
+  supervisor TRUE
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Lidar {
+      translation 0 0.1 0
+      rotation 0 1 0 -1.5707953071795862
+      fieldOfView 6.283
+      numberOfLayers 1
+      maxRange 8
+      noise 0.02
+    }
+  ]
+}
+CardboardBox {
+  translation -0.201269 0.3 -4.94642
+}
+CardboardBox {
+  translation 0.225428 0.3 5.08162
+  name "cardboard box(1)"
+}
+WoodenBox {
+  translation 4.01933 0.3 4.83136
+}
+WoodenBox {
+  translation 3.98789 0.3 -4.80066
+  name "wooden box(1)"
+}
+WoodenBox {
+  translation -4.22157 0.3 -1.79337
+  name "wooden box(2)"
+}
+WoodenBox {
+  translation -3.82065 0.3 -3.10465
+  name "wooden box(3)"
+}
+TexturedBackgroundLight {
+}
