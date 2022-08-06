@@ -136,15 +136,3 @@ while robot.step(TIME_STEP) != -1 and loop:
 
 
 
-    if correcao:
-        print("Iniciando Análise de movimento...")
-        print("Iniciando algoritmo de busca...")
-
-
-
-        correcao = False
-        break
-    else:
-        teste = True
-        movimentar([1, 1, 1, 1, 1, 1])
-
